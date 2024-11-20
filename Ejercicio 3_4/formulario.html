@@ -25,9 +25,32 @@
         <label for="rango1">20-39</label>
         
         
-        
+        <br><br>
         <label for="email">Email: </label>
-        <input id="email" type="email"><br><br>
+        <input id="email" 
+               name="email"
+               type="email"
+               required
+               placeholder="correo@ejemplo.com"
+               pattern=".+@g\.educaand\.es"
+               title="Introduce tu correo de @g.educaand.es">
+
+        <label for="telfono">telefono </label>
+        <input id="telefono"
+               name="telefono"
+               placeholder=" +34"
+               title="Introduce tu numero de telefono">
+               <br><br>
+        <label for="pass">Repita contraseña (8 characters minimum)</label>
+        <input type="password"
+               id="password"
+               name="password"
+               required
+               placeholder="Repita la contraseña"
+               minlength="8">
+        
+               
+       
         <label for="estudios">Estudios: </label>
         <select id="estudios">
            <optgroup label="Estudios Universitarios">
