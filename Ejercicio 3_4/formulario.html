@@ -15,15 +15,12 @@
         
         
         <label>Edad: </label>
-        <input type="checkbox" value="20-39"> 20-39
-        <input type="checkbox" value="40-59"> 40-59
-        <input type="checkbox" value="60-79"> 60-79<br><br>
-
-
-        <label>Edad: </label>
         <input type="radio" id="rango1" name="contactChoice1" name="edad_radio" value="20-39" />
         <label for="rango1">20-39</label>
-        
+        <input type="radio" id="rango2" name="contactChoice2" name="edad_radio" value="40-59" />
+        <label for="rango1">40-59</label>
+        <input type="radio" id="rango3" name="contactChoice3" name="edad_radio" value="60-79" />
+        <label for="rango1">60-79</label>
         
         <br><br>
         <label for="email">Email: </label>
@@ -38,8 +35,9 @@
         <label for="telfono">telefono </label>
         <input id="telefono"
                name="telefono"
-               placeholder=" +34"
-               title="Introduce tu numero de telefono">
+               placeholder=" +34 666 666 666"
+               title="Introduce tu numero de telefono"
+               pattern=".+34\666.666.666">
                <br><br>
         <label for="pass">Repita contraseña (8 characters minimum)</label>
         <input type="password"
@@ -49,8 +47,6 @@
                placeholder="Repita la contraseña"
                minlength="8">
         
-               
-       
         <label for="estudios">Estudios: </label>
         <select id="estudios">
            <optgroup label="Estudios Universitarios">
