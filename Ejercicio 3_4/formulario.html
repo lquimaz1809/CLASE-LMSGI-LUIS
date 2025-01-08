@@ -1,0 +1,81 @@
+<form>
+    <fieldset>
+        <legend>Datos personales</legend>
+        <label for="nombre">Nombre y apellidos: </label>
+        <input id="nombre" type="text" required minlength="3" maxlength="5" placeholder="Introduzca su nombre"><br>
+
+        <label for="sexo">Sexo: </label>
+        <select id="sexo">
+            <!--Etiqueta option-->
+            <option disabled selected hidden>Selecciona una opcion</option>
+            <option value="H">Hombre</option> 
+            <option value="M">Mujer</option>
+            <option value="O">Otro</option>
+        </select><br><br>
+        
+        
+        <label>Edad: </label>
+        <input type="radio" id="rango1" name="contactChoice1" name="edad_radio" value="20-39" />
+        <label for="rango1">20-39</label>
+        <input type="radio" id="rango2" name="contactChoice2" name="edad_radio" value="40-59" />
+        <label for="rango1">40-59</label>
+        <input type="radio" id="rango3" name="contactChoice3" name="edad_radio" value="60-79" />
+        <label for="rango1">60-79</label>
+        
+        <br><br>
+        <label for="email">Email: </label>
+        <input id="email" 
+               name="email"
+               type="email"
+               required
+               placeholder="correo@ejemplo.com"
+               pattern=".+@g\.educaand\.es"
+               title="Introduce tu correo de @g.educaand.es">
+
+        <label for="telfono">telefono </label>
+        <input id="telefono"
+               name="telefono"
+               placeholder=" +34 666 666 666"
+               title="Introduce tu numero de telefono"
+               pattern=".+34\666.666.666">
+               <br><br>
+        <label for="pass">Repita contraseña (8 characters minimum)</label>
+        <input type="password"
+               id="password"
+               name="password"
+               required
+               placeholder="Repita la contraseña"
+               minlength="8">
+        
+        <label for="estudios">Estudios: </label>
+        <select id="estudios">
+           <optgroup label="Estudios Universitarios">
+              <option>Doctorado</option>
+              <option>Máster</option>
+              <option>Grado</option>
+           </optgroup>
+           <optgroup label="Ciclo Formativo">
+              <option>Grado Superior</option>
+              <option>Grado Medio</option>
+           </optgroup>
+        </select><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Preferencias</legend>
+
+      <label for="navegador">Elige tu navegador favorito: </label>
+      <input id="navegador" list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+            <option value="Microsoft Edge">
+        </datalist><br><br>
+
+        <label for="mensaje">Escribe tu mensaje: </label>
+        <textarea rows="10" cols="50" placeholder="Mensaje" id="mensaje"></textarea>
+    </fieldset>  
+    <input type="submit" value="Enviar">
+</form>
