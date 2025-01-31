@@ -1,6 +1,9 @@
 /* Menú horizontal con transiciones */
 /*En este menú se ha creado una línea horizontal de colores diferentes encima de cada enlace. Se incluye una transición para cambiar el ancho de esa línea al 100% del contenedor de forma gradual*/
 /* Formato general de cada item */
+  h1 {
+    text-align: center;
+  }
 header {
   display: flex;
   flex-direction: column-reverse;
