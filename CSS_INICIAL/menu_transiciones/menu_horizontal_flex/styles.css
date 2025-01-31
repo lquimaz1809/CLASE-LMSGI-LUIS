@@ -3,6 +3,9 @@
 /* Formato general de cada item */
 header {
   display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  column-gap: 20px;
 }
 .menu {
   display: block;
@@ -83,9 +86,13 @@ header {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
 }
 
 li a {
