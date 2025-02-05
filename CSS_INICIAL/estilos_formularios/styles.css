@@ -1,10 +1,30 @@
-input {
+ form{max-width: 500px; margin: 0 auto;}
+ 
+ input, textarea{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 10px;
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 2s ease; /*Transicion para el color borde*/
+    transition: width 0,3s;
  }
- form{max-width: 500px; margin: 0 auto;}
+
+ textarea {
+    height: 150px;
+    resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input:focus, textarea:focus{
+    width: 100%;
+    outline: none;
+    background-color: moccasin;
+    border: 1px solid #2df722;
+}
+label.required::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+  }
