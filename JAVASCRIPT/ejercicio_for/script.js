@@ -5,3 +5,15 @@ const temperaturas = [
     [25,25,25,25,25,25,25]]; 
 
 const localidades = ["Vera","Huércal-Overa","Albox","Mojácar"];
+
+const data = document.getElementById("localidad");
+
+for(let i=0; i<localidades.length;i++){
+    data.innerHTML = data.innerHTML + `<option value="${localidades[i]}">${localidades[i]}</option>`
+}
+
+function avglocalidad(){
+  
+   const valor = document.getElementById("localidad").value;
+   document.getElementById("res_avglocalidad").innerHTML=valor;
+}
